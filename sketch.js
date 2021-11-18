@@ -89,7 +89,7 @@ function setup() {
   hillGroup.start();
 
   bar = new PerspectiveObject(barImg, 440, 0.4);
-  bar.progress = -0.5;
+  bar.progress = -2.2;
 
 
   // Audio mixing
