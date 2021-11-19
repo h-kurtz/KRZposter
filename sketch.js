@@ -128,7 +128,7 @@ function draw() {
 
   bar.move();
   bar.display();
-  musicDrum.pan(1 - bar.progress);
+  musicDrum.pan(constrain(1 - bar.progress, -1, 1));
   var barAmp = (2 * bar.progress) - 1;
   if (barAmp >= 1) {
     barAmp = constrain(2 - barAmp, 0, 1);
