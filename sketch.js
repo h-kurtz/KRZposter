@@ -160,9 +160,13 @@ function draw() {
 //———————————————————————————————————————————————————————————————————————————
 // Inputs!
 //———————————————————————————————————————————————————————————————————————————
+function mousePressed() {
+  userStartAudio();
+}
+
 function getInput() {
 
-  if (keyIsDown(UP_ARROW)) {
+  if (mouseIsPressed) {
     if (speed == 0) {
       engineStartSFX.play();
       engineLoopSFX.loop();
